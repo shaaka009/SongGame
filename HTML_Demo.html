@@ -1,43 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Higher, or, Lower, Song, Edition, HigherorLower"
+    />
+    <meta
+      name="description"
+      content="Which song is more popular? A simple game of higher or lower. Play now! The Higher Lower Game: Song Edition"
+    />
     <title>Higher or Lower: Song Version</title>
     <style>
       img.LeftImg {
         width: 600px;
         border-radius: 100px;
-        float: left;
-        margin-right: 10px;
+        margin-right: 0px;
+        position: absolute;
+        top: 200px;
+        left: 0px;
       }
       img.RightImg {
         width: 600px;
         border-radius: 100px;
-        float: right;
-        margin-left: 10px;
+        position: absolute;
+        top: 200px;
+        right: 10px;
+        margin-left: 1px;
       }
-      p.Song_Title {
+      h1 {
+        color: white;
+        position: absolute;
+        left: 300px;
+      }
+      h2 {
+        color: white;
+        position: absolute;
+        left: 375px;
+        top: 60px;
+      }
+      p {
+        color: white;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      p.SongTitleLeft {
         font-weight: bold;
+        color: white;
       }
-      button {
-        width: 600px;
-        
+      p.SongTitleRight {
+        font-weight: bold;
+        color: white;
       }
-    </style> 
+      p.or {
+        font-weight: bold;
+        color: white;
+      }
+      button.Higher {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        border-color: burlywood;
+        font-size: larger;
+        position: absolute;
+        top: 800px;
+        right: 100px;
+        padding: 10px;
+        margin: 10px;
+      }
+      button.Lower {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        border-color: burlywood;
+        font-size: larger;
+        position: absolute;
+        top: 850px;
+        right: 100px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>
-      <font color="green">HIGHER</font> 
-      or 
+      <font color="green">HIGHER</font>
+      OR
       <font color="red"> LOWER</font>
-      Guess If a Song has More Sales Than the Previous!
+      GAME: SONG EDITION
     </h1>
-    <p class = "Song_Title"> See You Again (feat. Kali Ukunis) by Tyler, the Creator </p>
-    <button> </button>
-    <img class = "LeftImg" src = "https://cultmtl.com/wp-content/uploads/2017/08/tyler-the-creator-flower-boy.jpg">
-    <p> or </p>
-    <p class = "Song_Title"> Blinding Lights by The Weeknd </p>
-    <img class = "RightImg"src = "https://i.discogs.com/lpvv4wq7A7M0UWqHcWw_uy35aU5_9iVoiS4FU1OvK0k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjQ4/MTkwLTE1Nzg4NjA5/MDUtNjkxOC5qcGVn.jpeg">
-    <button> </button>
-
+    <h2>Guess If a Song has More Sales Than the Previous!</h2>
+    <p class="SongTitleLeft">
+      See You Again (feat. Kali Ukunis) by Tyler, the Creator
+    </p>
+    <img
+      class="LeftImg"
+      src="https://cultmtl.com/wp-content/uploads/2017/08/tyler-the-creator-flower-boy.jpg"
+      alt="Left Song Cover"
+    />
+    <p class="or">OR</p>
+    <p class="SongTitleRight">Blinding Lights by The Weeknd</p>
+    <img
+      class="RightImg"
+      src="https://i.discogs.com/lpvv4wq7A7M0UWqHcWw_uy35aU5_9iVoiS4FU1OvK0k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjQ4/MTkwLTE1Nzg4NjA5/MDUtNjkxOC5qcGVn.jpeg"
+      alt="Right Song Cover"
+    />
+    <button class="Higher">Higher</button>
+    <button class="Lower">Lower</button>
   </body>
 </html>
