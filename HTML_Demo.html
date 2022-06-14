@@ -11,23 +11,33 @@
       name="description"
       content="Which song is more popular? A simple game of higher or lower. Play now! The Higher Lower Game: Song Edition"
     />
+
+    <link rel="stylesheet" href="style/style.css" />
+
     <title>Higher or Lower: Song Version</title>
+<<<<<<< HEAD
+=======
     <style>
+      .SongCovers {
+        border-radius: 100px;
+      }
       img.LeftImg {
         width: 600px;
-        border-radius: 100px;
+        border-radius: 50px;
         margin-right: 0px;
         position: absolute;
         top: 200px;
         left: 0px;
+        z-index: -1;
       }
       img.RightImg {
         width: 600px;
-        border-radius: 100px;
+        border-radius: 50px;
         position: absolute;
         top: 200px;
         right: 10px;
         margin-left: 1px;
+        z-index: -1;
       }
       h1 {
         color: white;
@@ -50,10 +60,16 @@
       p.SongTitleLeft {
         font-weight: bold;
         color: white;
+        position: absolute;
+        top: 600px;
+        left: 200px;
       }
       p.SongTitleRight {
         font-weight: bold;
         color: white;
+        position: absolute;
+        top: 600px;
+        right: 200px;
       }
       p.or {
         font-weight: bold;
@@ -67,7 +83,7 @@
         font-size: larger;
         position: absolute;
         top: 800px;
-        right: 100px;
+        right: 200px;
         padding: 10px;
         margin: 10px;
       }
@@ -79,11 +95,12 @@
         font-size: larger;
         position: absolute;
         top: 850px;
-        right: 100px;
+        right: 200px;
         padding: 10px;
         margin: 10px;
       }
     </style>
+>>>>>>> 27b41b8713e4ad8356bd18559b62464099dbda03
   </head>
   <body>
     <h1>
@@ -92,22 +109,31 @@
       <font color="red"> LOWER</font>
       GAME: SONG EDITION
     </h1>
-    <h2>Guess If a Song has More Sales Than the Previous!</h2>
+    <h2>Guess Which Song has More Sales!</h2>
+    <div class="SongCovers">
+      <img
+        class="LeftImg"
+        src="https://cultmtl.com/wp-content/uploads/2017/08/tyler-the-creator-flower-boy.jpg"
+        alt="Left Song Cover"
+      />
+      <img
+        class="RightImg"
+        src="https://i.discogs.com/lpvv4wq7A7M0UWqHcWw_uy35aU5_9iVoiS4FU1OvK0k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjQ4/MTkwLTE1Nzg4NjA5/MDUtNjkxOC5qcGVn.jpeg"
+        alt="Right Song Cover"
+      />
+    </div>
+
     <p class="SongTitleLeft">
       See You Again (feat. Kali Ukunis) by Tyler, the Creator
     </p>
-    <img
-      class="LeftImg"
-      src="https://cultmtl.com/wp-content/uploads/2017/08/tyler-the-creator-flower-boy.jpg"
-      alt="Left Song Cover"
-    />
     <p class="or">OR</p>
-    <p class="SongTitleRight">Blinding Lights by The Weeknd</p>
+
     <img
       class="RightImg"
       src="https://i.discogs.com/lpvv4wq7A7M0UWqHcWw_uy35aU5_9iVoiS4FU1OvK0k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjQ4/MTkwLTE1Nzg4NjA5/MDUtNjkxOC5qcGVn.jpeg"
       alt="Right Song Cover"
     />
+    <p class="SongTitleRight">Blinding Lights by The Weeknd</p>
     <button class="Higher">Higher</button>
     <button class="Lower">Lower</button>
   </body>
