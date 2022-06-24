@@ -3,14 +3,14 @@ img.LeftImg {
   border-radius: 100px;
   margin-right: 0px;
   position: absolute;
-  top: 200px;
+  top: 130px;
   left: 0px;
 }
 img.RightImg {
   width: 600px;
   border-radius: 100px;
   position: absolute;
-  top: 200px;
+  top: 130px;
   right: 10px;
   margin-left: 1px;
 }
@@ -34,11 +34,21 @@ body {
 }
 p.SongTitleLeft {
   font-weight: bold;
+  font-size: x-large;
   color: white;
+  position: absolute;
+  font-family: sans-serif;
+  top: 600px;
+  left: 0px;
 }
 p.SongTitleRight {
   font-weight: bold;
+  font-size: xx-large;
+  font-family: sans-serif;
   color: white;
+  position: absolute;
+  top: 600px;
+  right: 100px ;
 }
 p.or {
   font-weight: bold;
@@ -46,25 +56,40 @@ p.or {
 }
 button.Higher {
   width: 200px;
-  height: 50px;
+  height: 70px;
   font-weight: bold;
-  border-color: burlywood;
+  color:yellow;
+  background-color: transparent;
+  border-color:  rgb(34, 172, 75);
+  border-width: 5px;
+  border-radius: 100px;
   font-size: larger;
   position: absolute;
-  top: 800px;
+  top: 700px;
   right: 100px;
   padding: 10px;
   margin: 10px;
+  transition: ;
 }
+button.Higher:hover{
+  transition-delay: 1s;
+  background-color: rgb(34, 172, 75);
+  
+  
+
+}
+
 button.Lower {
   width: 200px;
-  height: 50px;
+  height: 70px;
   font-weight: bold;
   border-color: burlywood;
+  border-radius: 100px;
   font-size: larger;
   position: absolute;
-  top: 850px;
+  top: 770px;
   right: 100px;
   padding: 10px;
   margin: 10px;
+  border-width: 5px;
 }
