@@ -1,1 +1,1 @@
-console.log("Waddup Bitch");
+let score = 0; 
