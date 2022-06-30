@@ -50,9 +50,11 @@ p.SongTitleRight {
   top: 600px;
   right: 100px ;
 }
-p.or {
+p.vs {
   font-weight: bold;
   color: white;
+  top: 50%;
+  left: 50%;
 }
 button.Higher {
   width: 200px;
@@ -60,22 +62,26 @@ button.Higher {
   font-weight: bold;
   color:yellow;
   background-color: transparent;
-  border-color:  rgb(34, 172, 75);
+  border-color: white;
   border-width: 5px;
   border-radius: 100px;
   font-size: larger;
+  font-family: serif;
   position: absolute;
-  top: 700px;
+  cursor:pointer;
+  top: 150%;
   right: 100px;
   padding: 10px;
   margin: 10px;
-  transition: ;
+  text-align: center;
+  
 }
+
 button.Higher:hover{
-  transition-delay: 1s;
-  background-color: rgb(34, 172, 75);
   
-  
+  transition-delay: .5s;
+  background-color: white;
+  color: black;  
 
 }
 
