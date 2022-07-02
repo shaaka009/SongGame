@@ -71,7 +71,7 @@ button.higher {
   border-radius: 30px;
   border-style: solid;
   font-size: 18;
-  font-family: serif;
+  font-family: "Dosis",sans-serif;
   position: absolute;
   cursor:pointer;
   top: 51%;
@@ -99,7 +99,7 @@ button.higher {
   border-radius: 30px;
   border-style: solid;
   font-size: 18;
-  font-family: serif;
+  font-family: "Dosis",sans-serif;
   position: absolute;
   cursor:pointer;
   top: 62%;
