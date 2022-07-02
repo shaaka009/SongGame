@@ -1,0 +1,124 @@
+body.game{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Dosis",sans-serif;
+  color: white;
+
+}
+.isRankedLeft{
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  font-family: "Dosis",sans-serif;
+  top: 200px;
+  left: 20%;
+
+}
+.isRankedRight{
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  font-family: "Dosis",sans-serif;
+  top: 200px;
+  right: 20%;
+}
+.songRanking{
+  font-family: "Dosis",sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(216, 216, 74);
+  position: absolute;
+  top: 190px;
+  left: 18.8%;
+}
+.inRollingStones{
+  font-family: "Dosis",sans-serif;
+  position: absolute;
+  top: 325px;
+  left: 7%;
+  font-weight:lighter;
+}
+
+.vs {
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  z-index: 1;
+  text-align: center;
+  line-height: 72px;
+  position: absolute;
+  top: 44%;
+  left: 484px;
+  font-family: "Dosis",sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+}
+button.higher {
+  font-family: "Dosis",sans-serif;
+  height: 50px;
+  width: 160px;
+  font-weight: bold;
+  color:rgb(255, 255, 91);
+  background-color: transparent;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 18;
+  font-family: serif;
+  position: absolute;
+  cursor:pointer;
+  top: 51%;
+  right: 150px;
+  text-align: center;
+  
+}
+
+.higher:hover{
+  
+  transition-delay: .1s;
+  background-color: white;
+  color: black;  
+
+}
+
+.lower {
+  height: 50px;
+  width: 160px;
+  font-weight: bold;
+  color:rgb(255, 255, 91);
+  background-color: transparent;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 18;
+  font-family: serif;
+  position: absolute;
+  cursor:pointer;
+  top: 62%;
+  right: 150px;
+  text-align: center;
+}
+.lower:hover{
+  
+  transition-delay: .1s;
+  background-color: white;
+  color: black;  
+
+}
+.than{
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  font-family: "Dosis",sans-serif;
+  top: 375px;
+  right: 17%;
+}
