@@ -15,16 +15,16 @@
 }
 .songEdition{
   position: absolute;
-  left:34%;
-  top: 38%;
+  left:35%;
+  top: 30%;
   font-family:"Audiowide",sans-serif;
   font-size: 50px;
 }
 .guess{
   color: white;
   position: absolute;
-  left: 31.5%;
-  top: 55%;
+  left: 33%;
+  top: 45%;
   font-family: "Dosis",sans-serif;
 }
 .menu{
@@ -33,7 +33,7 @@
 
 }
 .play{
-  background-color: rgb(15, 219, 35);
+  background-color: rgb(89, 172, 81);
   font-family: "Dosis",sans-serif;
   border: none;
   color: white;
@@ -46,6 +46,6 @@
   top: 75%;
   left: 40%;
   cursor: pointer;
-
 }
+
 

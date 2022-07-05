@@ -12,7 +12,6 @@ body.game{
   font-weight: lighter;
   color: white;
   position: absolute;
-  font-family: "Dosis",sans-serif;
   top: 200px;
   left: 20%;
 
@@ -22,24 +21,22 @@ body.game{
   font-weight: lighter;
   color: white;
   position: absolute;
-  font-family: "Dosis",sans-serif;
   top: 200px;
-  right: 20%;
+  right: 18%;
 }
 .songRanking{
-  font-family: "Dosis",sans-serif;
+
   font-weight: bold;
   font-size: 60px;
-  color: rgb(216, 216, 74);
+  color: rgb(255, 249, 137);
   position: absolute;
   top: 190px;
   left: 18.8%;
 }
 .inRollingStones{
-  font-family: "Dosis",sans-serif;
   position: absolute;
   top: 325px;
-  left: 7%;
+  left: 10%;
   font-weight:lighter;
 }
 
@@ -54,63 +51,59 @@ body.game{
   line-height: 72px;
   position: absolute;
   top: 44%;
-  left: 484px;
-  font-family: "Dosis",sans-serif;
+  left: 48%;
   font-size: 21px;
   font-weight: bold;
 }
 button.higher {
-  font-family: "Dosis",sans-serif;
   height: 50px;
   width: 160px;
   font-weight: bold;
-  color:rgb(255, 255, 91);
+  font-family: "Dosis",sans-serif;
+  color:rgb(255, 249, 137);
   background-color: transparent;
   border-color: white;
   border-width: 2px;
   border-radius: 30px;
   border-style: solid;
-  font-size: 18;
-  font-family: "Dosis",sans-serif;
+  font-size: 18px;
   position: absolute;
   cursor:pointer;
-  top: 51%;
-  right: 150px;
+  top: 43%;
+  right: 15%;
   text-align: center;
-  
+  transition: background-color .15s, color .15s;  
 }
 
 .higher:hover{
-  
-  transition-delay: .1s;
   background-color: white;
-  color: black;  
-
+  color: black; 
 }
 
 .lower {
   height: 50px;
   width: 160px;
   font-weight: bold;
-  color:rgb(255, 255, 91);
+  font-family: "Dosis",sans-serif;
+  color:rgb(255, 249, 137);
   background-color: transparent;
   border-color: white;
   border-width: 2px;
   border-radius: 30px;
   border-style: solid;
-  font-size: 18;
-  font-family: "Dosis",sans-serif;
+  font-size: 18px;
   position: absolute;
   cursor:pointer;
-  top: 62%;
-  right: 150px;
+  top: 53%;
+  right: 15%;
   text-align: center;
+  transition: background-color .15s, color .15s;  
 }
 .lower:hover{
-  
-  transition-delay: .1s;
+
   background-color: white;
   color: black;  
+
 
 }
 .than{
@@ -118,7 +111,6 @@ button.higher {
   font-weight: lighter;
   color: white;
   position: absolute;
-  font-family: "Dosis",sans-serif;
   top: 375px;
   right: 17%;
 }
