@@ -44,18 +44,18 @@ body.game{
   background: rgb(255, 255, 255);
   color: black;
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
   z-index: 1;
   text-align: center;
-  line-height: 72px;
+  line-height: 100px;
   position: absolute;
-  top: 44%;
-  left: 48%;
-  font-size: 21px;
-  font-weight: bold;
+  top: 40%;
+  left: 47%;
+  font-size: 32px;
+  font-weight: bolder;
 }
-button.higher {
+.higher {
   height: 50px;
   width: 160px;
   font-weight: bold;
@@ -74,10 +74,20 @@ button.higher {
   text-align: center;
   transition: background-color .15s, color .15s;  
 }
-
+.higher::after{
+  content: "\25B2";
+  padding-left: 20px;
+  color: white;
+}
 .higher:hover{
   background-color: white;
   color: black; 
+}
+.higher:hover::after{
+  content: "\25B2";
+  padding-left: 20px;
+  color: black; 
+  font-size: 20px;
 }
 
 .lower {
@@ -99,13 +109,23 @@ button.higher {
   text-align: center;
   transition: background-color .15s, color .15s;  
 }
-.lower:hover{
-
-  background-color: white;
-  color: black;  
-
-
+.lower::after{
+  content: "\25BC";
+  padding-left: 20px;
+  color: white;
 }
+.lower:hover{
+  background-color: white;
+  color: black; 
+}
+.lower:hover::after{
+  content: "\25BC";
+  padding-left: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+
 .than{
   font-size: 20px;
   font-weight: lighter;
