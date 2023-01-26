@@ -15,13 +15,19 @@ app.use(
 );
 app.use(cors());
 
-var movie1 = { title: "Stronger",
+var song1 = { title: "Stronger",
                artist: "Kanye West",
                rank: 500,
-               release: 2007
-            imgsrc: "https://wallpaperaccess.com/full/425004.jpg" }
+               release: 2007,
+               imgsrc: "https://wallpaperaccess.com/full/425004.jpg"}
 
+var song2 = { title: "Respect",
+               artist: "Arethra Franklin",
+               rank: 1,
+               release: 1967,
+               imgsrc: "https://www.rollingstone.com/wp-content/uploads/2021/09/1-aretha-franklin-respect.jpeg?w=306"}
 
+var songs = [song1, song2]
 
 
 //You can use this to check if your server is working
