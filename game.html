@@ -13,6 +13,7 @@
     />
   </head>
   <body class="game">
+    <script type="javascript" src="server/game.js"></script>
     <div class="wrapping">
       <img
         class="songCoverLeft"
@@ -33,12 +34,16 @@
       />
       <p class="songTitleRight">Respect, By Arethra Franklin</p>
       <p class="isRankedRight">is ranked</p>
+      <form action="http://localhost:3000/compare" method="POST">
+        <input type="text" name="username" placeholder="username" />
+        <input type="text" name="password" placeholder="password" />
+        <button type="submit">Login</button>
+      </form>
       <a href="game/game.html">
         <button class="higher">Higher</button>
         <button class="lower">Lower</button>
       </a>
       <p class="than">than Stronger</p>
     </div>
-    <script src="/js/index.js"></script>
   </body>
 </html>

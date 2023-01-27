@@ -33,6 +33,10 @@ app.post("/signup", (req, res) => {
   console.log(req.body.password);
 });
 
+app.post("/compare", (req, res) => {
+  console.log("Higher!");
+});
+
 //Start your server on a specified port
 app.listen(port, () => {
   console.log(`Server is runing on port ${port}`);
