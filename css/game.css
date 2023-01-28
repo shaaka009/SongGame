@@ -51,7 +51,7 @@ body.game{
   line-height: 100px;
   position: absolute;
   top: 40%;
-  left: 47%;
+  left: 46%;
   font-size: 32px;
   font-weight: bolder;
 }
@@ -69,8 +69,8 @@ body.game{
   font-size: 18px;
   position: absolute;
   cursor:pointer;
-  top: 43%;
-  right: 15%;
+  top: 52%;
+  right: 14%;
   text-align: center;
   transition: background-color .15s, color .15s;  
 }
@@ -104,8 +104,8 @@ body.game{
   font-size: 18px;
   position: absolute;
   cursor:pointer;
-  top: 53%;
-  right: 15%;
+  top: 62%;
+  right: 14%;
   text-align: center;
   transition: background-color .15s, color .15s;  
 }
