@@ -1,3 +1,6 @@
+var x1 = 0;
+var x2 = 1;
+
 var song1 = {
   title: "Stronger",
   artist: "Kanye West",
@@ -17,15 +20,25 @@ var song2 = {
 
 var songs = [song1, song2];
 
-function compare() {
-  let x1 = Math.floor(Math.random() * (2 - 0));
+function calculate(guess) {
+  if (songs[x1].rank > songs[x2].rank && guess == "higher") {
+    console.log("correct!");
+    newCompare();
+  } else if (songs[x1].rank < songs[x2].rank && guess == "lower") {
+    console.log("correct!");
+    newCompare();
+  } else {
+    console.log("wrong");
+  }
+}
 
-  let x2 = Math.floor(Math.random() * (2 - 0));
+function newCompare() {
+  x1 = Math.floor(Math.random() * (2 - 0));
+
+  x2 = Math.floor(Math.random() * (2 - 0));
   while (x2 == x1) {
     x2 = Math.floor(Math.random() * (2 - 0));
   }
-  //console.log(x1);
-  //console.log(x2);
   var leftTitle = document.getElementById("titleLeft");
   var rightTitle = document.getElementById("titleRight");
   var rightPic = document.getElementById("picRight");
@@ -41,13 +54,6 @@ function compare() {
 }
 
 function firstCompare() {
-  let x1 = Math.floor(Math.random() * (2 - 0));
-
-  let x2 = Math.floor(Math.random() * (2 - 0));
-  while (x2 == x1) {
-    x2 = Math.floor(Math.random() * (2 - 0));
-  }
-
   var leftTitle = document.getElementById("titleLeft");
   var rightTitle = document.getElementById("titleRight");
   var rightPic = document.getElementById("picRight");
@@ -55,11 +61,11 @@ function firstCompare() {
   var leftRank = document.getElementById("rankLeft");
   var than = document.getElementById("than");
 
-  leftTitle.innerText = songs[x1].title + ", by " + songs[x1].artist;
-  rightTitle.innerText = songs[x2].title + ", by " + songs[x2].artist;
-  leftPic.src = songs[x1].imgsrc;
-  rightPic.src = songs[x2].imgsrc;
+  leftTitle.innerText = songs[0].title + ", by " + songs[0].artist;
+  rightTitle.innerText = songs[1].title + ", by " + songs[1].artist;
+  leftPic.src = songs[0].imgsrc;
+  rightPic.src = songs[1].imgsrc;
 
-  leftRank.innerText = songs[x1].rank;
-  than.innerText = "Than " + songs[x1].title;
+  leftRank.innerText = songs[0].rank;
+  than.innerText = "Than " + songs[0].title;
 }
