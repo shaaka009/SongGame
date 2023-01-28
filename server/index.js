@@ -33,7 +33,7 @@ app.post("/signup", (req, res) => {
   console.log(req.body.password);
 });
 
-app.post("/compare", (req, res) => {
+app.post("/Higher", (req, res) => {
   console.log("Higher!");
 });
 
