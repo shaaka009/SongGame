@@ -11,13 +11,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Dosis"
     />
+    <script src="js/index.js"></script>
   </head>
   <body class="game" onload="firstCompare()">
-    <script src="js/index.js"></script>
-
     <div class="wrapping">
       <img
         class="songCoverLeft"
+        id="picLeft"
         src="https://upload.wikimedia.org/wikipedia/en/d/d7/KW-Stronger.jpg"
       />
       <p class="songTitleLeft" id="titleLeft">Stronger, By Kanye West</p>
@@ -46,7 +46,7 @@
 
       <button class="lower" onClick="compare()">Lower</button>
 
-      <p class="than">than Stronger</p>
+      <p class="than" id="than">than Stronger</p>
     </div>
   </body>
 </html>
