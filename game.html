@@ -12,16 +12,17 @@
       href="https://fonts.googleapis.com/css?family=Dosis"
     />
   </head>
-  <body class="game">
-    <script type="javascript" src="server/game.js"></script>
+  <body class="game" onload="firstCompare()">
+    <script src="js/index.js"></script>
+
     <div class="wrapping">
       <img
         class="songCoverLeft"
         src="https://upload.wikimedia.org/wikipedia/en/d/d7/KW-Stronger.jpg"
       />
-      <p class="songTitleLeft">Stronger, By Kanye West</p>
+      <p class="songTitleLeft" id="titleLeft">Stronger, By Kanye West</p>
       <p class="isRankedLeft">is ranked</p>
-      <p class="songRanking">500</p>
+      <p class="songRanking" id="rankLeft">500</p>
       <p class="inRollingStones">
         in <b><i> RollingStone's </i></b>Top 500 Greatest Songs of All Time
       </p>
@@ -30,19 +31,21 @@
     <div class="wrapping">
       <img
         class="songCoverRight"
+        id="picRight"
         src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534452282/respect-9781534452282_hr.jpg"
       />
-      <p class="songTitleRight">Respect, By Arethra Franklin</p>
+      <p class="songTitleRight" id="titleRight">Respect, By Arethra Franklin</p>
       <p class="isRankedRight">is ranked</p>
       <!--<form action="http://localhost:3000/compare" method="POST">
         <input type="text" name="username" placeholder="username" />
         <input type="text" name="password" placeholder="password" />
         <button type="submit">Login</button>
       </form>-->
-      <form action="http://localhost:3000/Higher" method="POST">
-        <button class="higher">Higher</button>
-        <button class="lower">Lower</button>
-      </form>
+
+      <button class="higher" onClick="compare()">Higher</button>
+
+      <button class="lower" onClick="compare()">Lower</button>
+
       <p class="than">than Stronger</p>
     </div>
   </body>
