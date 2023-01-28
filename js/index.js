@@ -1,1 +1,0 @@
-let score = 0; 
