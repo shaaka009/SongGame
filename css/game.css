@@ -31,7 +31,7 @@ body.game{
   color: rgb(255, 249, 137);
   position: absolute;
   top: 190px;
-  left: 18.8%;
+  left: 19.2%;
 }
 .inRollingStones{
   position: absolute;
@@ -69,7 +69,7 @@ body.game{
   font-size: 18px;
   position: absolute;
   cursor:pointer;
-  top: 52%;
+  top: 42%;
   right: 14%;
   text-align: center;
   transition: background-color .15s, color .15s;  
@@ -104,7 +104,7 @@ body.game{
   font-size: 18px;
   position: absolute;
   cursor:pointer;
-  top: 62%;
+  top: 52%;
   right: 14%;
   text-align: center;
   transition: background-color .15s, color .15s;  
