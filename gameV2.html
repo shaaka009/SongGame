@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css\gameV2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis"
+    />
+    <script src="js/indexV2.js"></script>
+  </head>
+
+
+
+  <body onload="newCompare()">
+
+    <div class="wrap left">
+
+      <div class="textContent">
+
+        <p class = "text title" id = "LTitle">Title</p>
+        <p class = "text ranked" id = "LRanked">Ranked</p>
+        <p class = "text rank" id = "LRank">Ranks</p>
+        <p class = "text in" id = "LIn">in <b><i> RollingStone's </i></b>Top 500 Greatest Songs of All Time</p>
+
+      </div>
+
+    </div>
+    <div class="wrap right">
+
+      <div class="textContent">
+
+        <p class = "text title" id = "RTitle">Title</p>
+        <div class="buttons">
+          <button class="button" id = "higher" onClick="calculate('higher')">Higher</button>
+          <div class="spacer"></div>
+          <button class="button" id = "lower" onClick="calculate('lower')">Lower</button>
+        </div>
+        <p class = "text in" id = "RIn">in <b><i> RollingStone's </i></b>Top 500 Greatest Songs of All Time</p>
+
+
+      </div>
+
+    </div>
+    
+  </body>
+</html>

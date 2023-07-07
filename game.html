@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css\albumcovers.css" />
     <link rel="stylesheet" href="css\game.css" />
     <link
       rel="stylesheet"
@@ -13,34 +12,32 @@
     />
     <script src="js/index.js"></script>
   </head>
-  <body class="game" onload="firstCompare()">
-    <div class="wrapping">
+
+
+
+  <body onload="firstCompare()">
+    <div class="wrapLeft" id="wrapLeft">
       <img
         class="songCoverLeft"
         id="picLeft"
         src="https://upload.wikimedia.org/wikipedia/en/d/d7/KW-Stronger.jpg"
       />
-      <p class="songTitleLeft" id="titleLeft">Stronger, By Kanye West</p>
+      <p class="songTitleLeft" id="titleLeft"></p>
       <p class="isRankedLeft">is ranked</p>
-      <p class="songRanking" id="rankLeft">500</p>
+      <p class="songRanking" id="rankLeft"></p>
       <p class="inRollingStones">
         in <b><i> RollingStone's </i></b>Top 500 Greatest Songs of All Time
       </p>
     </div>
     <div class="vs"><b>VS</b></div>
-    <div class="wrapping">
+    <div class="wrapRight" id = "wrapRight">
       <img
         class="songCoverRight"
         id="picRight"
         src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534452282/respect-9781534452282_hr.jpg"
       />
-      <p class="songTitleRight" id="titleRight">Respect, By Arethra Franklin</p>
+      <p class="songTitleRight" id="titleRight"></p>
       <p class="isRankedRight">is ranked</p>
-      <!--<form action="http://localhost:3000/compare" method="POST">
-        <input type="text" name="username" placeholder="username" />
-        <input type="text" name="password" placeholder="password" />
-        <button type="submit">Login</button>
-      </form>-->
 
       <button class="higher" onClick="calculate('higher')">Higher</button>
 
