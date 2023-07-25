@@ -12,7 +12,7 @@
 ,489, "Cannonball", "The Breeders", 1993, "https://upload.wikimedia.org/wikipedia/en/b/b1/Cannonball_%28Breeders%29.jpg"
 ,488, "House of Balloons", "The Weeknd", 2011, "https://m.media-amazon.com/images/I/713zdlBqPtL._UF1000,1000_QL80_.jpg"
 ,487, "Cranes in the Sky", "Solange", 2016, "https://e.snmc.io/i/600/s/fedda3a5fcd6fdd21bae1eca3051bf8c/7423244/solange-cranes-in-the-sky-Cover-Art.jpg"
-,486, "A Milli", "Lil Wayne", 2009, "https://i1.sndcdn.com/artworks-000160289419-8aqgzh-t500x500.jpg" 
+,486, "A Milli", "Lil Wayne", 2009, "https://i1.sndcdn.com/artworks-000160289419-8aqgzh-t500x500.jpg"
 ,485, "212", "Azealia Banks", 2011, "https://i1.sndcdn.com/artworks-T6IQ7FBVkFYQzQ3J-dD7shw-t500x500.jpg"
 ,484, "Buddy Holly", "Weezer", 1994, "https://i.scdn.co/image/ab67616d0000b273345536847e60f622ee0eae96"
 ,483, "I Can’t Help Myself", "Four Tops", 1965, "https://m.media-amazon.com/images/I/511d7FU2SyL._UF1000,1000_QL80_.jpg"
@@ -22,8 +22,8 @@
 ,479, "Oye Como Va", "Santana", 1970, "https://i.discogs.com/T1MrX_W4ItmlOAppV7nkvL86W4L8kx3_5zzbv9u0WCA/rs:fit/g:sm/q:90/h:495/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODE0/NzAtMTIwNjEwODM0/NS5qcGVn.jpeg"
 ,478, "Back That Azz Up", "Juvenile", 1998, "https://i.scdn.co/image/ab67616d0000b273370a7296e61c5cac42d52c5a"
 ,477, "Our Lips Are Sealed", "The Go-Gos", 1981, "https://images.genius.com/3d22ee4a97ce6bd61f41aaed4810bc56.500x500x1.jpg"
-,476, "Sunday Morning Coming Down", "Kris Kristofferson", 1970
-,475, "Rhythm Nation", "Janet Jackson", 1989
+,476, "Sunday Morning Coming Down", "Kris Kristofferson", 1970, "https://i.discogs.com/5KuZVUPHvsAFY3cXZw5NSPE_WM4ke3opcDDRb_0ET4E/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NzEx/MjctMTI0MjI5Mjg0/MS5qcGVn.jpeg"
+,475, "Rhythm Nation", "Janet Jackson", 1989, "https://upload.wikimedia.org/wikipedia/en/1/1c/Janet_Jackson_Rhythm_Nation.png"
 ,474, "Move On Up", "Curtis Mayfield", 1970
 ,473, "Stand By Your Man", "Tammy Wynette", 1968
 ,472, "Solsbury Hill", "Peter Gabriel", 1977
@@ -488,7 +488,7 @@
 ,10" "‘Hey Ya!", "Outkast", 2003
 ,9","Dreams", "Fleetwood Mac", 1977
 ,8","Get Ur Freak On", "Missy Elliott", 2001
-,7","Strawberry Fields", "Forever The Beatles", 1967
+,7","Strawberry Fields Forever", "The Beatles", 1967
 ,6","What’s Goin’ On?", "Marvin Gaye", 1971
 ,5","Smells Like Teen Spirit", "Nirvana", 1991
 ,4","Like a Rolling Stone", "Bob Dylan", 1965

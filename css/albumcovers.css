@@ -17,22 +17,28 @@
     opacity: .4;
   }
   p.songTitleLeft {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Centering Horizantly */
     font-weight:999;
     font-size: 37px;
     color: white;
     position: absolute;
     font-family: "Dosis",sans-serif;
-    top: 125px;
-    left: 9%;
+    top: 40px;
+    left: 15.5%;
   }
   p.songTitleRight {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Centering Horizantly */
     font-weight: 999;
     font-size: 37px;
     color: white;
     position: absolute;
     font-family: "Dosis", sans-serif;
-    top: 125px;
-    right: 5%;
+    top: 40px;
+    right: 11%;
   }
 
   
