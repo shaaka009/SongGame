@@ -18,7 +18,7 @@
 .songEdition{
   position: absolute;
   left:35%;
-  top: 33%;
+  top:39%;
   font-family:"Audiowide",sans-serif;
   font-size: 50px;
 }
@@ -26,7 +26,7 @@
   color: white;
   position: absolute;
   left: 33%;
-  top: 48%;
+  top: 55%;
   font-family: "Dosis",sans-serif;
 }
 .menu{
@@ -49,5 +49,31 @@
   left: 40%;
   cursor: pointer;
 }
+.devs{
+  color: white;
+  position: absolute;
+  left: 1%;
+  top: 102%;
+  font-family: "Dosis",sans-serif;
+  font-size: 12px;
+}
 
+.cons{
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 105%;
+  font-family: "Dosis",sans-serif;
+  font-size: 12px;
+
+}
+.net{
+  color: white;
+  position: absolute;
+  left: 46%;
+  top: 90%;
+  font-family: "Dosis",sans-serif;
+  font-size: 15px;
+
+}
 

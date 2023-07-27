@@ -39,13 +39,16 @@ function getAlbum(rank){
 function newCompare() {
   xl = xr;
   while (pastranks.includes(xr)){
-    xr = Math.floor(Math.random() * (500)); 
+    xr = Math.floor(Math.random() * (100)); 
   }
   pastranks.push(xr);
 
   var leftTitle = document.getElementById("LTitle");
   var rightTitle = document.getElementById("RTitle");
   var leftRank = document.getElementById("LRank");
+  var leftPic = document.getElementById("picLeft");
+  var leftPic = document.getElementById("picRight");
+
 
   leftRank.innerText = xl;
   leftTitle.innerText = rightTitle.innerText;
