@@ -43,27 +43,12 @@ function newCompare() {
   }
   pastranks.push(xr);
 
-  var leftTitle = document.getElementById("titleLeft");
-  var rightTitle = document.getElementById("titleRight");
-  var rightPic = document.getElementById("picRight");
-  var leftPic = document.getElementById("picLeft");
-  var leftRank = document.getElementById("rankLeft");
+  var leftTitle = document.getElementById("LTitle");
+  var rightTitle = document.getElementById("RTitle");
+  var leftRank = document.getElementById("LRank");
 
   leftTitle.innerText = rightTitle.innerText;
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
-  /*if(getTitle(xl).length > getArtist(xl).length){
-    leftTitle.style.left = 16 - Math.ceil((getTitle(xl).length - 10)/2) + "%";
-  }
-  else{
-    leftTitle.style.left = 16 - Math.ceil((getArtist(xl).length - 10)/2) + "%";
-  }
-  if(getTitle(xr).length > getArtist(xr).length){
-    rightTitle.style.right = 11 - Math.ceil((getTitle(xr).length - 10)/2) + "%";
-  }
-  else{
-    rightTitleTitle.style.right = 11 - Math.ceil((getArtist(xr).length - 10)/2) + "%";
-  }*/
-      //should line break between song title and artist^
   leftPic.src = rightPic.src;
   rightPic.src = getAlbum(xr);
   if (xl.toString().length == 1 ){
@@ -81,21 +66,18 @@ function newCompare() {
 }
 
 function firstCompare() {
-  var leftTitle = document.getElementById("titleLeft");
-  var rightTitle = document.getElementById("titleRight");
-  var rightPic = document.getElementById("picRight");
-  var leftPic = document.getElementById("picLeft");
-  var leftRank = document.getElementById("rankLeft");
-  var than = document.getElementById("than");
+;
+  x1 = 500;
+  x2 = 1;
+  var leftTitle = document.getElementById("LTitle");
+  var leftRank = document.getElementById("LRank");
+  var rightTitle = document.getElementById("RTitle");
 
-  leftTitle.innerText = songs[0].title + "\n  by \n" + songs[0].artist; 
-    //should line break between song title and artist^
-  rightTitle.innerText = songs[1].title + "\n  by \n" + songs[1].artist;
-  leftPic.src = songs[0].imgsrc;
-  rightPic.src = songs[1].imgsrc;
+  leftTitle.innerText = getTitle(x1) + ", by " + getArtist(x1);
+  rightTitle.innerText = getTitle(x2) + ", by " + getArtist(x2);
 
-  leftRank.innerText = songs[0].rank;
-  than.innerText = "Than " + songs[0].title;
+  leftRank.innerText = x1;
+
 }
 
 
