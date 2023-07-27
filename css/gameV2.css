@@ -34,7 +34,15 @@ html, body{
 
   width: 100%;
   height: 100%;
-  filter: brightness(80%);
+  filter: brightness(50%);
+
+}
+
+.coverRight {
+
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
 
 }
 

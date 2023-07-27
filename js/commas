@@ -1,4 +1,4 @@
-500, "Stronger", "Kanye West", 2007
+500, "Stronger", "Kanye West", 2007, https://upload.wikimedia.org/wikipedia/en/d/d7/KW-Stronger.jpg
 ,499, "Baby Love", "The Supremes", 1964, "https://m.media-amazon.com/images/I/614-RdaM4YL._UF1000,1000_QL80_.jpg"
 ,498, "Pancho and Lefty", "Townes Van Zandt", 1972, "https://i.discogs.com/59nUVbERVTY6BEDgHwIZEr-U_GSp65AGFSvVT0fmNX0/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODA3/MTAtMTM5MzI4NzM5/My05MDI5LmpwZWc.jpeg"
 ,497, "Truth Hurts", "Lizzo", 2017, "https://upload.wikimedia.org/wikipedia/en/a/a9/LizzoTruthHurts.jpg"
@@ -24,31 +24,32 @@
 ,477, "Our Lips Are Sealed", "The Go-Gos", 1981, "https://images.genius.com/3d22ee4a97ce6bd61f41aaed4810bc56.500x500x1.jpg"
 ,476, "Sunday Morning Coming Down", "Kris Kristofferson", 1970, "https://i.discogs.com/5KuZVUPHvsAFY3cXZw5NSPE_WM4ke3opcDDRb_0ET4E/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NzEx/MjctMTI0MjI5Mjg0/MS5qcGVn.jpeg"
 ,475, "Rhythm Nation", "Janet Jackson", 1989, "https://upload.wikimedia.org/wikipedia/en/1/1c/Janet_Jackson_Rhythm_Nation.png"
-,474, "Move On Up", "Curtis Mayfield", 1970
-,473, "Stand By Your Man", "Tammy Wynette", 1968
-,472, "Solsbury Hill", "Peter Gabriel", 1977
-,471, "The House of the Rising Sun", "The Animals", 1964,+47", "Midnight Train to Georgia", "Gladys Knight and the Pips", 1973
-,469, "Goodbye Earl", "Dixie Chicks", 2000
-,468, "Fade Into You", "Mazzy Star", 1993
-,467, "Come As You Are", "Nirvana", 1991
-,466, "Never Too Much", "Luther Vandross", 1981
-,465, "Get Lucky", "Daft Punk", 2013
-,464, "Help Me", "Joni Mitchell", 1974
-,463, "Boom Boom", "John Lee Hooker", 1962
-,462, "Into the Mystic", "Van Morrison", 1970
-,461, "Crying", "Roy Orbison", 1962
-,460, "Ku Klux Klan", "Steel Pulse", 1978
-,459, "No Ordinary Love", "Sade", 1992
+,474, "Move On Up", "Curtis Mayfield", 1970, https://images.genius.com/9c1c1a804e291bb9536b9ce9f3701b48.700x700x1.jpg
+,473, "Stand By Your Man", "Tammy Wynette", 1968, https://upload.wikimedia.org/wikipedia/en/1/11/Standbyyourman.jpg
+,472, "Solsbury Hill", "Peter Gabriel", 1977, https://m.media-amazon.com/images/M/MV5BMzI2ZTljNTctNWY0NS00OTI0LWIyOTktMzQ4YzNjOTlhM2NlXkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg
+,471, "The House of the Rising Sun", "The Animals", 1964, https://static.stereogum.com/uploads/2018/06/The-Animals-The-House-Of-The-Rising-Sun-1530124841.jpg
+,470, "Midnight Train to Georgia", "Gladys Knight and the Pips", 1973, https://i.scdn.co/image/ab67616d0000b273b259f0c28799e7ffff48c707
+,469, "Goodbye Earl", "Dixie Chicks", 2000, https://i.discogs.com/LVuQsvnWnjvLuP4lgKH09X1sdWKRtSOiGQgry3HdazE/rs:fit/g:sm/q:90/h:517/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODY2/ODc0LTE2NzQ1Mjcx/MDUtOTA4NC5qcGVn.jpeg
+,468, "Fade Into You", "Mazzy Star", 1993, https://images.genius.com/8a85fbf4da29ff657270d38d93be7891.1000x990x1.jpg
+,467, "Come As You Are", "Nirvana", 1991, https://upload.wikimedia.org/wikipedia/en/0/06/ComeAsYouAre.jpg
+,466, "Never Too Much", "Luther Vandross", 1981, https://upload.wikimedia.org/wikipedia/en/4/42/Ntm-lv.jpg
+,465, "Get Lucky", "Daft Punk", 2013, https://i1.sndcdn.com/artworks-PbYum0yeCDPc3XyV-lIVNSw-t500x500.jpg
+,464, "Help Me", "Joni Mitchell", 1974, https://upload.wikimedia.org/wikipedia/en/0/06/Joni_Mitchell_Help_Me_cover.jpeg
+,463, "Boom Boom", "John Lee Hooker", 1962, https://m.media-amazon.com/images/I/51tBnd3jBzL._UF1000,1000_QL80_.jpg
+,462, "Into the Mystic", "Van Morrison", 1970, https://i.ytimg.com/vi/pbZf8GY1-Ag/maxresdefault.jpg
+,461, "Crying", "Roy Orbison", 1962, https://m.media-amazon.com/images/I/61c0u1INiDL._UF1000,1000_QL80_.jpg
+,460, "Ku Klux Klan", "Steel Pulse", 1978, https://framemark.vam.ac.uk/collections/2011FA7510/full/735,/0/default.jpg
+,459, "No Ordinary Love", "Sade", 1992, https://i1.sndcdn.com/artworks-pkUjgtyMONnf3yoj-uZwNvQ-t500x500.jpg
 ,458, "Loser", "Beck", 1993, "https://i.scdn.co/image/ab67616d0000b273b07e5a0787e609bc1f1270f8"
-,457, "Livin’ on a Prayer", "Bon Jovi", 1986
-,456, "Summertime Sadness", "Lana Del Rey", 2012
-,455, "White Rabbit", "Jefferson Airplane", 1967
+,457, "Livin’ on a Prayer", "Bon Jovi", 1986, https://m.media-amazon.com/images/M/MV5BMjE0ZTVlZTktZjY3My00NDhiLThjZjMtMDlmOGVlNjY0ZjAzXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg
+,456, "Summertime Sadness", "Lana Del Rey", 2012, https://i1.sndcdn.com/artworks-000338788569-fxot50-t500x500.jpg
+,455, "White Rabbit", "Jefferson Airplane", 1967, https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/White_rabbit.JPG/200px-White_rabbit.JPG
 ,454, "Bam Bam", "Sister Nancy", 1982, "https://i.scdn.co/image/ab67616d0000b27333c6f21ab00263515f0b0d6d"
-,453, "The Rain", "Missy Elliot", 1997
-,452, "Africa", "Toto", 1982
-,451, "Bad and Boujee", "Migos", 2016
-,450, "Powderfinger", "Neil Young", 1979
-,449, "Don’t Fear the Reaper", "Blue Oyster Cult", 1976
+,453, "The Rain", "Missy Elliot", 1997, https://images.vice.com/noisey/content-images/article/what-i-learned-about-style-from-missy-elliots-the-rain-supa-dupa-fly/4cab5493f859d9af9c2dd48ddaf1514a.jpg
+,452, "Africa", "Toto", 1982, https://upload.wikimedia.org/wikipedia/en/1/1f/Toto_-_Africa.jpg
+,451, "Bad and Boujee", "Migos", 2016, https://i1.sndcdn.com/artworks-vupBMZS2tvtlsFv4-W7qJaA-t500x500.jpg
+,450, "Powderfinger", "Neil Young", 1979, https://cdn.albumoftheyear.org/album/241333-powderfinger.jpg
+,449, "Don’t Fear the Reaper", "Blue Oyster Cult", 1976, https://i.scdn.co/image/ab67616d0000b2733ac318439ae56ce048d7bf5d
 ,448, "Tyrone", "Erykah Badu", 1997
 ,447, "Help!", "The Beatles", 1965
 ,446, "Rosalita", "Bruce Springsteen", 1973
