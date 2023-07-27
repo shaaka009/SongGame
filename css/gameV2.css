@@ -137,6 +137,7 @@ html, body{
   border-radius: 30px;
   border-style: solid;
   font-size: 18px;
+  transition: background-color .15s, color .15s; 
 
 }
 .button:hover{

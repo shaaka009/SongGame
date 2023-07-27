@@ -43,12 +43,11 @@ function newCompare() {
   }
   pastranks.push(xr);
 
-  var leftTitle = document.getElementById("titleLeft");
-  var rightTitle = document.getElementById("titleRight");
-  var leftRank = document.getElementById("rankLeft");
+  var leftTitle = document.getElementById("LTitle");
+  var rightTitle = document.getElementById("RTitle");
+  var leftRank = document.getElementById("LRank");
 
-  
-
+  leftRank.innerText = xl;
   leftTitle.innerText = rightTitle.innerText;
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
   leftPic.src = rightPic.src;
@@ -73,6 +72,7 @@ function firstCompare() {
   var leftTitle = document.getElementById("LTitle");
   var leftRank = document.getElementById("LRank");
   var rightTitle = document.getElementById("RTitle");
+  leftRank.innerText = xl
 
   leftTitle.innerText = getTitle(xl) + "\n by \n" + getArtist(xl);
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);

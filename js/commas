@@ -486,13 +486,13 @@
 ,13" "Gimme Shelter", "Stones", 1969
 ,12" "Superstition", "Stevie Wonder", 1972
 ,11" "God Only Knows", "Beach Boys", 1966
-,10" "‘Hey Ya!", "Outkast", 2003
-,9","Dreams", "Fleetwood Mac", 1977
-,8","Get Ur Freak On", "Missy Elliott", 2001
-,7","Strawberry Fields Forever", "The Beatles", 1967
-,6","What’s Goin’ On?", "Marvin Gaye", 1971
-,5","Smells Like Teen Spirit", "Nirvana", 1991
-,4","Like a Rolling Stone", "Bob Dylan", 1965
-,3","A Change is Gonna Come", "Sam Cooke", 1964
-,2","Fight the Power", "Public Enemy", 1989
-,1","Respect", "Aretha Franklin", 1967
+,10 "‘Hey Ya!", "Outkast", 2003
+,9,"Dreams", "Fleetwood Mac", 1977
+,8,"Get Ur Freak On", "Missy Elliott", 2001
+,7,"Strawberry Fields Forever", "The Beatles", 1967, https://i1.sndcdn.com/artworks-000346644600-1q8zh6-t500x500.jpg
+,6,"What’s Goin’ On?", "Marvin Gaye", 1971, "https://i.scdn.co/image/ab67616d0000b273a50b1d091804aa030724874c"
+,5,"Smells Like Teen Spirit", "Nirvana", 1991, "https://i.scdn.co/image/ab67616d00001e02e175a19e530c898d167d39bf"
+,4,"Like a Rolling Stone", "Bob Dylan", 1965, "https://i.scdn.co/image/ab67616d0000b27341720ef0ae31e10d39e43ca2"
+,3,"A Change is Gonna Come", "Sam Cooke", 1964, "https://i.scdn.co/image/ab67616d0000b2737329db55d8ec4e851b694aa1"
+,2,"Fight the Power", "Public Enemy", 1989, "https://i.scdn.co/image/ab67616d0000b2734961bd9ace0a070ef23604b6"
+,1,"Respect", "Aretha Franklin", 1967
