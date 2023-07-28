@@ -1,8 +1,7 @@
 var xl = 500;
 var xr = 1;
 var pastranks = [1,500];
-
-
+var score =0;
 var allsongs = ["500", "Stronger", "Kanye West", "2007", "https://upload.wikimedia.org/wikipedia/en/d/d7/KW-Stronger.jpg"
 ,"499", "Baby Love", "The Supremes", "1964", "https://m.media-amazon.com/images/I/614-RdaM4YL._UF1000,1000_QL80_.jpg"
 ,"498", "Pancho and Lefty", "Townes Van Zandt", "1972", "https://i.discogs.com/59nUVbERVTY6BEDgHwIZEr-U_GSp65AGFSvVT0fmNX0/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODA3/MTAtMTM5MzI4NzM5/My05MDI5LmpwZWc.jpeg"
@@ -504,14 +503,20 @@ var allsongs = ["500", "Stronger", "Kanye West", "2007", "https://upload.wikimed
 ];
 
 function calculate(guess) {
+  var scoretext = document.getElementById("score");
   if (xl > xr && guess == "higher") {
     console.log("correct!");
+    score+=1;
+    scoretext.innerText = "Score: "+ score;
     newCompare();
   } else if (xl < xr && guess == "lower") {
-    console.log("correct!");
+    console.log("correct!"); 
+    score+=1;
+    scoretext.innerText = "Score: "+ score;
     newCompare();
   } else {
     console.log("wrong");
+    lose();
   }
 }
 function getTitle(rank){
@@ -581,6 +586,13 @@ function firstCompare() {
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
 
   leftRank.innerText = x1;
+
+}
+function lose(){
+  var finalscore=  document.getElementById("finalscore");
+  var gameover = document.getElementById("game_over_container");
+  gameover.style.display = inline;
+  finalscore.innerText = score;
 
 }
 

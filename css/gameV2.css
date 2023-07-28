@@ -76,7 +76,7 @@ html, body{
   width: 80%;
   height: 45%;
   margin: auto; 
-  top: 23%; 
+  top: 25%; 
   left: 10%;
   vertical-align: middle;
   color: white;
@@ -86,6 +86,7 @@ html, body{
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
   font-weight:bold;
+  opacity: 90%;
 }
 
 .title {
@@ -124,23 +125,24 @@ html, body{
 
 .button{
 
-  width: 30%;
-  height: 50px;
+  width: 40%;
+  height: 70px;
   display: inline-block;
   font-weight: bold;
   font-family: "Dosis",sans-serif;
   color:rgb(255, 249, 137);
-  background-color: black;
+  background-color: transparent;
   opacity: 100%;
   border-color: white;
   border-width: 2px;
   border-radius: 30px;
   border-style: solid;
-  font-size: 18px;
+  font-size: 16px;
   transition: background-color .15s, color .15s; 
 
 }
 .button:hover{
+  cursor: pointer;
   background-color: white;
   color: black; 
 }
@@ -181,7 +183,7 @@ html, body{
   color: black;
   font-family: "Dosis",sans-serif;
   text-align: center;
-  font-size: 2.4em;
+  font-size: 2.5em;
   text-shadow: 1px 0 black;
   letter-spacing: 2px;
   font-weight:bold;
@@ -192,10 +194,11 @@ html, body{
 .vs-circle {
 
   position: relative;
-  background: rgb(255, 255, 158);
+  background: rgb(255, 255, 255);
   color: black;
-  width: 100px;
-  height: 100px;
+  opacity: 90%;
+  width: 80px;
+  height: 80px;
   z-index: 1;
   text-align: center;
   border-radius: 50%;
@@ -217,7 +220,7 @@ html, body{
 
 .spacer-2 {
 
-  height: 100%;
+  height:17%;
 
 }
 .in {
@@ -227,4 +230,36 @@ html, body{
 .than{ 
   font-size: 20px;
   font-weight: lighter;
+}
+.game_over_container{
+  display: none;
+}
+.scores{
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 45%;
+  margin: auto; 
+  vertical-align: middle;
+  color: white;
+  font-family: "Dosis",sans-serif;
+  text-align: center;
+  font-size: 19px;
+  text-shadow: 1px 0 white;
+  letter-spacing: 2px;
+  font-weight:bold; 
+     
+
+}
+#score{
+  top: 70%; 
+  left: 50%;
+
+}
+#highscore{
+  top: 71%; 
+  right: 45%;
 }
