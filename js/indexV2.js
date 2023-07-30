@@ -2,7 +2,8 @@ var xl = 500;
 var xr = 1;
 var pastranks = [1,500];
 var score =0;
-var allsongs = ["500", "Stronger", "Kanye West", "2007", "https://upload.wikimedia.org/wikipedia/en/d/d7/KW-Stronger.jpg"
+var highscore=-1;
+var allsongs = ["500", "Stronger", "Kanye West", "2007", "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a"
 ,"499", "Baby Love", "The Supremes", "1964", "https://m.media-amazon.com/images/I/614-RdaM4YL._UF1000,1000_QL80_.jpg"
 ,"498", "Pancho and Lefty", "Townes Van Zandt", "1972", "https://i.discogs.com/59nUVbERVTY6BEDgHwIZEr-U_GSp65AGFSvVT0fmNX0/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODA3/MTAtMTM5MzI4NzM5/My05MDI5LmpwZWc.jpeg"
 ,"497", "Truth Hurts", "Lizzo", "2017", "https://upload.wikimedia.org/wikipedia/en/a/a9/LizzoTruthHurts.jpg"
@@ -503,16 +504,13 @@ var allsongs = ["500", "Stronger", "Kanye West", "2007", "https://upload.wikimed
 ];
 
 function calculate(guess) {
-  var scoretext = document.getElementById("score");
   if (xl > xr && guess == "higher") {
     console.log("correct!");
     score+=1;
-    scoretext.innerText = "Score: "+ score;
     newCompare();
   } else if (xl < xr && guess == "lower") {
     console.log("correct!"); 
     score+=1;
-    scoretext.innerText = "Score: "+ score;
     newCompare();
   } else {
     console.log("wrong");
@@ -541,17 +539,22 @@ function getAlbum(rank){
   return allsongs[albumIndex];
 }
 function newCompare() {
+  
   xl = xr;
   while (pastranks.includes(xr)){
     xr = Math.floor(Math.random() * (100)); 
   }
   pastranks.push(xr);
-
+  var scoretext = document.getElementById("score");
+  var hs =  document.getElementById("highscore");
   var leftTitle = document.getElementById("LTitle");
   var rightTitle = document.getElementById("RTitle");
   var leftRank = document.getElementById("LRank");
   var leftPic = document.getElementById("picLeft");
   var rightPic = document.getElementById("picRight");
+  scoretext.innerText = "Score: "+ score;
+  hs.innerText = "High Score: " + highscore;
+
 
 
   leftRank.innerText = xl;
@@ -575,25 +578,31 @@ function newCompare() {
 }
 
 function firstCompare() {
+  document.getElementById("game_over_container").style.display = "none";
   xl = 500;
   xr = 1;
   var leftTitle = document.getElementById("LTitle");
-  var leftRank = document.getElementById("LRank");
   var rightTitle = document.getElementById("RTitle");
+  var leftRank = document.getElementById("LRank");
+  var leftPic = document.getElementById("picLeft");
+  var rightPic = document.getElementById("picRight"); 
+  leftPic.src = getAlbum(xl);
+  rightPic.src = getAlbum(xr); 
+  
   leftRank.innerText = xl
-
   leftTitle.innerText = getTitle(xl) + "\n by \n" + getArtist(xl);
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
-
   leftRank.innerText = x1;
-
 }
 function lose(){
   var finalscore=  document.getElementById("finalscore");
   var gameover = document.getElementById("game_over_container");
-  gameover.style.display = inline;
   finalscore.innerText = score;
-
+  gameover.style.display = "block";
+  if (highscore < score){
+    highscore = score;
+  }
+  score = 0;
 }
 
 

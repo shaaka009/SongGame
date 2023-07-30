@@ -60,7 +60,7 @@ html, body{
   left: 10%;
   vertical-align: middle;
   color: white;
-  font-family: "Dosis",sans-serif;
+  font-family:"Gruppo";
   text-align: center;
   font-size: 2.4em;
   text-shadow: 1px 0 white;
@@ -80,7 +80,7 @@ html, body{
   left: 10%;
   vertical-align: middle;
   color: white;
-  font-family: "Dosis",sans-serif;
+  font-family:"Gruppo";
   text-align: center;
   font-size: 2.4em;
   text-shadow: 1px 0 white;
@@ -129,7 +129,7 @@ html, body{
   height: 70px;
   display: inline-block;
   font-weight: bold;
-  font-family: "Dosis",sans-serif;
+  font-family: "Gruppo";
   color:rgb(255, 249, 137);
   background-color: transparent;
   opacity: 100%;
@@ -181,7 +181,7 @@ html, body{
   left: 50%;
   transform: translate(-50%, 0%);
   color: black;
-  font-family: "Dosis",sans-serif;
+  font-family: "Aclonica";
   text-align: center;
   font-size: 2.5em;
   text-shadow: 1px 0 black;
@@ -217,9 +217,7 @@ html, body{
   color: black;
 
 }
-
 .spacer-2 {
-
   height:17%;
 
 }
@@ -231,11 +229,8 @@ html, body{
   font-size: 20px;
   font-weight: lighter;
 }
-.game_over_container{
-  display: none;
-}
 .scores{
-  z-index: 3;
+  z-index: 5;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -245,16 +240,21 @@ html, body{
   margin: auto; 
   vertical-align: middle;
   color: white;
-  font-family: "Dosis",sans-serif;
+  font-family: "Aclonica";
   text-align: center;
   font-size: 19px;
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
   font-weight:bold; 
+  top: -8%; 
+  left: 10%;
      
 
 }
 #score{
+  font-family: 'Aclonica';
+  font-size: 22px;
+
   top: 70%; 
   left: 50%;
 
@@ -263,3 +263,92 @@ html, body{
   top: 71%; 
   right: 45%;
 }
+
+#game_over_container{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;  
+  vertical-align: middle;
+  color: white;
+  font-family: "Aclonica";
+  text-align: center;
+  font-size: 2.4em;
+  text-shadow: 1px 0 white;
+  letter-spacing: 2px;
+  font-weight:bold;
+  display: none;
+
+}
+#finalscore{
+  font-size: 40px;
+  top: 5%; 
+  left: 10%;
+  color: rgb(255, 249, 137);;
+}
+#losingimage {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+}
+
+.button1{  
+  position: absolute;
+  z-index: 5;
+  width: 25%;
+  height: 70px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: "Gruppo";
+  color:white;
+  background-color: transparent;
+  opacity: 100%;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 30px;
+  transition: background-color .15s, color .15s; 
+}
+#again{
+  top: 40%;
+  left: 52%;
+}
+#menu{
+  top: 40%;
+  left: 23%;
+}
+.button1:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black; 
+}
+#menu::after{
+  padding-left: 20px;
+  color: white;
+}
+#menu:hover::after{
+  padding-left: 20px;
+  color: black; 
+  font-size: 20px;
+}
+#again::after{
+  padding-left: 20px;
+  color: white;
+}
+#again:hover::after{
+  padding-left: 20px;
+  color: black; 
+  font-size: 20px;
+}
+
+
