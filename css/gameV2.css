@@ -229,12 +229,6 @@ html, body{
   font-size: 20px;
   font-weight: lighter;
 }
-<<<<<<< HEAD
-=======
-#game_over_container{
-  display: none;
-}
->>>>>>> f07c259e6a206c124364a004f0b82f5eeab173f5
 .scores{
   z-index: 5;
   position: absolute;
@@ -270,7 +264,6 @@ html, body{
   right: 45%;
 }
 
-<<<<<<< HEAD
 #game_over_container{
   box-sizing: border-box;
   position: relative;
@@ -358,12 +351,6 @@ html, body{
   font-size: 20px;
 }
 
-
-=======
 .snippet {
-
-
   z-index: 9;
-
 }
->>>>>>> f07c259e6a206c124364a004f0b82f5eeab173f5
