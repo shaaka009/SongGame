@@ -556,6 +556,13 @@ function newCompare() {
   hs.innerText = "High Score: " + highscore;
 
 
+  var rightSide = document.getElementById("wrap_right");
+  var LeftPos = rightSide.offsetLeft;
+  var RightPos = LeftPos + boxElement.offsetWidth;
+
+  rightSide
+  
+
 
   leftRank.innerText = xl;
   leftTitle.innerText = rightTitle.innerText;
@@ -592,7 +599,9 @@ function firstCompare() {
   leftRank.innerText = xl
   leftTitle.innerText = getTitle(xl) + "\n by \n" + getArtist(xl);
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
-  leftRank.innerText = x1;
+
+  leftRank.innerText = xl;
+
 }
 function lose(){
   var finalscore=  document.getElementById("finalscore");
