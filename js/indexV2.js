@@ -553,6 +553,13 @@ function newCompare() {
   var leftPic = document.getElementById("picLeft");
   var rightPic = document.getElementById("picRight");
 
+  var rightSide = document.getElementById("wrap_right");
+  var LeftPos = rightSide.offsetLeft;
+  var RightPos = LeftPos + boxElement.offsetWidth;
+
+  rightSide
+  
+
 
   leftRank.innerText = xl;
   leftTitle.innerText = rightTitle.innerText;
@@ -585,13 +592,13 @@ function firstCompare() {
   leftTitle.innerText = getTitle(xl) + "\n by \n" + getArtist(xl);
   rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
 
-  leftRank.innerText = x1;
+  leftRank.innerText = xl;
 
 }
 function lose(){
   var finalscore=  document.getElementById("finalscore");
   var gameover = document.getElementById("game_over_container");
-  gameover.style.display = inline;
+  gameover.style.display = "inline";
   finalscore.innerText = score;
 
 }
