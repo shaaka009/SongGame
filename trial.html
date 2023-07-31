@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+  </head>
+
+  <body style="height: 100%;">
+    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+
+    <div id = "snippet"></div>
+
+    <button id = "hover" style = "color: white; background-color: black; width: 20%; height: 50px;">press me</button>
+
+    <script type="text/javascript">
+      window.onSpotifyIframeApiReady = (IFrameAPI) => {
+        const element = document.getElementById('snippet');
+        const options = {
+            uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
+          };
+        const callback = (EmbedController) => {
+
+          document.getElementById('hover').addEventListener('mouseover', () => {
+
+            console.log("OVER!!!!!");
+            EmbedController.togglePlay();
+
+          });
+
+        };
+        IFrameAPI.createController(element, options, callback);
+      };
+    </script>
+    
+  </body>
+</html>
