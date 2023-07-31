@@ -501,7 +501,8 @@ var allsongs = [
   ,"4", "Like a Rolling Stone", "Bob Dylan", "1965", "https://i.scdn.co/image/ab67616d0000b27341720ef0ae31e10d39e43ca2"
   ,"3","A Change is Gonna Come", "Sam Cooke", "1964", "https://i.scdn.co/image/ab67616d0000b2737329db55d8ec4e851b694aa1"
   ,"2", "Fight the Power", "Public Enemy", "1989", "https://i.scdn.co/image/ab67616d0000b273a50264ff1ba8653b1ecf5628"
-  ,"1","Respect", "Aretha Franklin", "1967", "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534452282/respect-9781534452282_hr.jpg"];
+  ,"1","Respect", "Aretha Franklin", "1967", "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534452282/respect-9781534452282_hr.jpg"
+];
 
 function calculate(guess) {
   console.log(allsongs.length);
@@ -620,5 +621,3 @@ function lose(){
   highscore.innerText = highscore
   score = 0;
 }
-
-
