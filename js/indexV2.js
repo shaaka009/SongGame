@@ -2,7 +2,7 @@ var xl = 500;
 var xr = 1;
 var pastranks = [1,500];
 var score =0;
-var highscore=-1;
+var highscore=0;
 var allsongs = ["500", "Stronger", "Kanye West", "2007", "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a"
 ,"499", "Baby Love", "The Supremes", "1964", "https://m.media-amazon.com/images/I/614-RdaM4YL._UF1000,1000_QL80_.jpg"
 ,"498", "Pancho and Lefty", "Townes Van Zandt", "1972", "https://i.discogs.com/59nUVbERVTY6BEDgHwIZEr-U_GSp65AGFSvVT0fmNX0/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODA3/MTAtMTM5MzI4NzM5/My05MDI5LmpwZWc.jpeg"
@@ -542,13 +542,15 @@ function newCompare() {
   
   xl = xr;
   while (pastranks.includes(xr)){
-    xr = Math.floor(Math.random() * (100)); 
+    xr = Math.floor(Math.random() * (500)); 
   }
   pastranks.push(xr);
   var scoretext = document.getElementById("score");
   var hs =  document.getElementById("highscore");
   var leftTitle = document.getElementById("LTitle");
   var rightTitle = document.getElementById("RTitle");
+  var leftArtist = document.getElementById("Lartist");
+  var rightArtist = document.getElementById("Rartist");
   var leftRank = document.getElementById("LRank");
   var leftPic = document.getElementById("picLeft");
   var rightPic = document.getElementById("picRight");
@@ -556,19 +558,15 @@ function newCompare() {
   hs.innerText = "High Score: " + highscore;
 
 
-  var rightSide = document.getElementById("wrap_right");
-  var LeftPos = rightSide.offsetLeft;
-  var RightPos = LeftPos + boxElement.offsetWidth;
-
-  rightSide
-  
-
-
+  //var rightSide = document.getElementById("wrap_right");
+  //var LeftPos = rightSide.offsetLeft;
+  //var RightPos = LeftPos + boxElement.offsetWidth;
   leftRank.innerText = xl;
   leftTitle.innerText = rightTitle.innerText;
-  rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
+  rightTitle.innerText = getTitle(xr);
+  leftArtist.innerText = rightArtist.innerText;
+  rightArtist.innerText = getArtist(xr);
   leftPic.src = rightPic.src;
-  console.log(getAlbum(xr));
   rightPic.src = getAlbum(xr);
   if (xl.toString().length == 1 ){
     leftRank.style.left = "22%";
@@ -585,11 +583,17 @@ function newCompare() {
 }
 
 function firstCompare() {
+  score = 0;
+  document.getElementById("highscore").innerText = "High Score: " + highscore;
+  document.getElementById("score").innerText = "Score: " + 0;
+
   document.getElementById("game_over_container").style.display = "none";
   xl = 500;
   xr = 1;
   var leftTitle = document.getElementById("LTitle");
   var rightTitle = document.getElementById("RTitle");
+  var leftArtist = document.getElementById("Lartist");
+  var rightArtist = document.getElementById("Rartist");
   var leftRank = document.getElementById("LRank");
   var leftPic = document.getElementById("picLeft");
   var rightPic = document.getElementById("picRight"); 
@@ -597,8 +601,10 @@ function firstCompare() {
   rightPic.src = getAlbum(xr); 
   
   leftRank.innerText = xl
-  leftTitle.innerText = getTitle(xl) + "\n by \n" + getArtist(xl);
-  rightTitle.innerText = getTitle(xr) + "\n by \n" + getArtist(xr);
+  leftTitle.innerText = getTitle(xl);
+  leftArtist.innerText =  getArtist(xl);
+  rightTitle.innerText = getTitle(xr);
+  rightArtist.innerText= getArtist(xr);
 
   leftRank.innerText = xl;
 
@@ -611,6 +617,7 @@ function lose(){
   if (highscore < score){
     highscore = score;
   }
+  highscore.innerText = highscore
   score = 0;
 }
 

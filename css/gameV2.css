@@ -1,52 +1,36 @@
 html, body{
-
   display: flex;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
   margin: 0%;
   overflow: hidden;
-
 }
-
 .wrap{
-
   box-sizing: border-box;
   position: relative;
   background-color: black;
   width: 100%;
   height: 100%;
   z-index: 1;
-
 }
-
 .bg-container{
-
   position: absolute;
   width: 100%;
   height: 100%;
   margin: auto;
   z-index: 2;
-
 }
-
-
 .coverLeft {
-
   width: 100%;
   height: 100%;
   filter: brightness(50%);
-
 }
-
 .coverRight {
-
   width: 100%;
   height: 100%;
   filter: brightness(50%);
-
 }
-
 .textContent-left{
   z-index: 3;
   position: absolute;
@@ -56,16 +40,16 @@ html, body{
   width: 80%;
   height: 45%;
   margin: auto;  
-  top: 20%;
+  top: 35%;
   left: 10%;
   vertical-align: middle;
   color: white;
-  font-family:"Gruppo";
+  font-family: Helvetica;
   text-align: center;
   font-size: 2.4em;
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
-  font-weight:bold;
+  font-weight:lighter;
 }
 .textContent-right{
   z-index: 3;
@@ -76,43 +60,49 @@ html, body{
   width: 80%;
   height: 45%;
   margin: auto; 
-  top: 25%; 
+  top: 35%; 
   left: 10%;
   vertical-align: middle;
   color: white;
-  font-family:"Gruppo";
+  font-family: Helvetica;
   text-align: center;
   font-size: 2.4em;
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
-  font-weight:bold;
+  font-weight:100;
   opacity: 90%;
+  
 }
-
 .title {
+  font-size: 40px;
+  margin-bottom: 2%;
+  margin-top: 0;
 
-  font-size: 4vw;
-  margin-bottom: 0;
-
+}
+#by{
+  font-size: 12px;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: Helvetica;
 }
 .ranked {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 30px;
+  font-weight:lighter;
+  font-family: Helvetica;
+  font-size: 16px;
 
-  margin-top: 5%;
-  font-size: 20px;
 
 }
-
 .rank {
-
-  margin-top: 1px;
-  margin-bottom: 1px;
-  font-size: 60px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 100px;
+  font-family: Brush Script MT;
   color: rgb(255, 249, 137);
-
 }
-
 .buttons{
-
   position: relative;
   width: 100%;
   height: 40%;
@@ -120,16 +110,13 @@ html, body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
-
 .button{
-
-  width: 40%;
-  height: 70px;
+  width: 42%;
+  height: 4473920px;
   display: inline-block;
-  font-weight: bold;
-  font-family: "Gruppo";
+  font-weight: 100;
+  font-family: Helvetica;
   color:rgb(255, 249, 137);
   background-color: transparent;
   opacity: 100%;
@@ -139,12 +126,19 @@ html, body{
   border-style: solid;
   font-size: 16px;
   transition: background-color .15s, color .15s; 
-
 }
 .button:hover{
   cursor: pointer;
   background-color: white;
   color: black; 
+}
+#higher{
+  margin-top: 2%;
+}
+#lower{
+  margin-top: 2%;
+  margin-bottom:2%;
+
 }
 #higher::after{
   content: "\25B2";
@@ -171,9 +165,7 @@ html, body{
 .spacer{
   height: 10%;
 }
-
 .versus-container {
-
   z-index: 4;
   position: absolute;
   width: 10vw;
@@ -181,22 +173,19 @@ html, body{
   left: 50%;
   transform: translate(-50%, 0%);
   color: black;
-  font-family: "Aclonica";
+  font-family: Helvetica;
   text-align: center;
   font-size: 2.5em;
   text-shadow: 1px 0 black;
   letter-spacing: 2px;
   font-weight:bold;
   background-color: transparent;
-
 }
-
 .vs-circle {
-
   position: relative;
   background: rgb(255, 255, 255);
   color: black;
-  opacity: 90%;
+  opacity: 100%;
   width: 80px;
   height: 80px;
   z-index: 1;
@@ -207,27 +196,26 @@ html, body{
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-
 }
-
 .vs {
-
+  font-family: Helvetica;
+  font-size: 30px;
   width: 100%;
   height: 100%;
   color: black;
-
+  font-weight: lighter;
 }
 .spacer-2 {
-  height:17%;
-
+  height:100%;
 }
 .in {
   font-size: 15px;
   font-weight:lighter;
 }
 .than{ 
-  font-size: 20px;
+  font-size: 16px;
   font-weight: lighter;
+  margin-bottom: 10%;
 }
 .scores{
   z-index: 5;
@@ -240,7 +228,7 @@ html, body{
   margin: auto; 
   vertical-align: middle;
   color: white;
-  font-family: "Aclonica";
+  font-family: Helvetica;
   text-align: center;
   font-size: 19px;
   text-shadow: 1px 0 white;
@@ -248,22 +236,19 @@ html, body{
   font-weight:bold; 
   top: -8%; 
   left: 10%;
-     
-
 }
 #score{
-  font-family: 'Aclonica';
+  font-family: Helvetica;
   font-size: 22px;
-
-  top: 70%; 
-  left: 50%;
-
+  top: 75%; 
+  left: 45%;
 }
 #highscore{
-  top: 71%; 
-  right: 45%;
-}
+  top: 75%; 
+  left: -22%;
+  font-size: 22px;
 
+}
 #game_over_container{
   box-sizing: border-box;
   position: relative;
@@ -279,14 +264,13 @@ html, body{
   margin: auto;  
   vertical-align: middle;
   color: white;
-  font-family: "Aclonica";
+  font-family: Helvetica;
   text-align: center;
   font-size: 2.4em;
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
   font-weight:bold;
   display: none;
-
 }
 #finalscore{
   font-size: 40px;
@@ -308,7 +292,7 @@ html, body{
   height: 70px;
   display: inline-block;
   font-weight: bold;
-  font-family: "Gruppo";
+  font-family: Helvetica;
   color:white;
   background-color: transparent;
   opacity: 100%;
