@@ -40,7 +40,7 @@ html, body{
   width: 80%;
   height: 45%;
   margin: auto;  
-  top: 30%;
+  top: 20%;
   left: 10%;
   vertical-align: middle;
   color: white;
@@ -60,7 +60,7 @@ html, body{
   width: 80%;
   height: 45%;
   margin: auto; 
-  top: 30%; 
+  top: 20%; 
   left: 10%;
   vertical-align: middle;
   color: white;
@@ -86,8 +86,9 @@ html, body{
   font-family: Helvetica;
 }
 .ranked {
-  margin-top: 2%;
-  margin-bottom: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
   font-size: 30px;
   font-weight:lighter;
   font-family: Helvetica;
@@ -105,16 +106,17 @@ html, body{
 }
 .buttons{
   position: relative;
-  width: 100%;
-  height: 31%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
 }
 .button{
   width: 42%;
-  height: 4473920px;
+  height: 50px;
   display: inline-block;
   font-weight: 100;
   font-family: Helvetica;
@@ -133,14 +135,7 @@ html, body{
   background-color: white;
   color: black; 
 }
-#higher{
-  margin-top: 2%;
-}
-#lower{
-  margin-top: 2%;
-  margin-bottom:2%;
 
-}
 #higher::after{
   content: "\25B2";
   padding-left: 20px;
@@ -164,7 +159,7 @@ html, body{
   font-size: 20px;
 }
 .spacer{
-  height: 10%;
+  height: 5px;
 }
 .versus-container {
   z-index: 5;
@@ -216,7 +211,7 @@ html, body{
 .than{ 
   font-size: 16px;
   font-weight: lighter;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
 }
 .scores{
   z-index: 5;
