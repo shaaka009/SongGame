@@ -3,6 +3,7 @@ var xr = 1;
 var pastranks = [1,500];
 var score =0;
 var highscore=0;
+var scrolling = false;
 var allsongs = [
   "500", "Stronger", "Kanye West", "2007", "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a"
   ,"499", "Baby Love", "The Supremes", "1964", "https://m.media-amazon.com/images/I/614-RdaM4YL._UF1000,1000_QL80_.jpg"
@@ -503,9 +504,36 @@ var allsongs = [
   ,"2", "Fight the Power", "Public Enemy", "1989", "https://i.scdn.co/image/ab67616d0000b273a50264ff1ba8653b1ecf5628"
   ,"1","Respect", "Aretha Franklin", "1967", "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534452282/respect-9781534452282_hr.jpg"
 ];
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function animateValue(start, end, duration) {
+  scrolling = true;
+  butt = document.getElementById("buttons"); 
+  butt.style.display = "none";
+  obj = document.getElementById("scroll");
+  obj.style.display = "block";
+  let startTimestamp = null;
+  const step = async (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerText = Math.floor(progress * (end - start) + start);
+    if (obj.innerText == xr){
+      await sleep(1000);
+      butt.style.display = "flex";
+      obj.style.display = "none";
+      scrolling = false;
+    }    
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
 
-function calculate(guess) {
-  console.log(allsongs.length);
+async function calculate(guess) {
+  animateValue(500, xr, 1200)
+  await sleep(2200);
   if (xl > xr && guess == "higher") {
     console.log("correct!");
     score+=1;
@@ -518,10 +546,10 @@ function calculate(guess) {
     console.log("wrong");
     lose();
   }
+  
 }
 function getTitle(rank){
   titleIndex = ((500 - rank) * 5) + 1;
-  console.log(allsongs.length);
   return allsongs[titleIndex];
 }
 function getArtist(rank){
@@ -541,7 +569,6 @@ function getAlbum(rank){
   return allsongs[albumIndex];
 }
 function newCompare() {
-  
   xl = xr;
   while (pastranks.includes(xr)){
     xr = Math.floor(Math.random() * (500)); 
@@ -558,8 +585,6 @@ function newCompare() {
   var rightPic = document.getElementById("picRight");
   scoretext.innerText = "Score: "+ score;
   hs.innerText = "High Score: " + highscore;
-
-
   //var rightSide = document.getElementById("wrap_right");
   //var LeftPos = rightSide.offsetLeft;
   //var RightPos = LeftPos + boxElement.offsetWidth;
@@ -581,7 +606,6 @@ function newCompare() {
     leftRank.style.fontSize = "75px";
     leftRank.innerText =  xl;  }
   else{leftRank.innerText = xl;}
-
 }
 function firstCompare() {
   score = 0;

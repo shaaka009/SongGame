@@ -104,7 +104,16 @@ html, body{
   font-family: Brush Script MT;
   color: rgb(255, 249, 137);
 }
-.buttons{
+#scroll{
+  display: none;
+  font: 800 40px system-ui;
+  font-size: 100px;
+  font-family: Brush Script MT;
+  color: rgb(255, 249, 137);
+
+  
+}
+#buttons{
   position: relative;
   display: flex;
   flex-direction: column;
