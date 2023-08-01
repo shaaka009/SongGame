@@ -1,3 +1,4 @@
+
 var xl = 500;
 var xr = 1;
 var pastranks = [1,500];
@@ -348,7 +349,7 @@ var allsongs = [
   ,"159", "Baba O’Riley", "The Who", "1971", "https://i.scdn.co/image/ab67616d0000b2733d9a3f6e207a8ff033a25636"
   ,"158", "Cissy Strut", "Meters", "1969", "https://i.scdn.co/image/ab67616d0000b273f679e710b37b7491472d86f5"
   ,"157", "Teenage Riot", "Sonic Youth", "1988", "https://i.scdn.co/image/ab67616d00001e02b690940b6544fb39bf3653d2"
-  ,"156", "Louie Louie", "The Kinsgmen", "1963", "https://i.scdn.co/image/ab67616d0000b273901898df0fdfb1f492b674d1"
+  ,"156", "Louie Louie", "The Kingsmen", "1963", "https://i.scdn.co/image/ab67616d0000b273901898df0fdfb1f492b674d1"
   ,"155", "Last Nite", "The Strokes", "2001", "https://i.scdn.co/image/ab67616d0000b27313f2466b83507515291acce4"
   ,"154", "Spoonful Howlin’", "Wolf", "1960", "https://i.scdn.co/image/ab67616d0000b27302a1dd1ceb2a99f137e3a17e"
   ,"153", "Super Freak", "James Brown", "1981", "https://i.scdn.co/image/ab67616d00001e02c1c69c9e76fa824c084470ee"
@@ -507,6 +508,7 @@ var allsongs = [
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
 function animateValue(start, end, duration) {
   scrolling = true;
   butt = document.getElementById("buttons"); 
@@ -532,16 +534,27 @@ function animateValue(start, end, duration) {
 }
 
 async function calculate(guess) {
-  animateValue(500, xr, 1200)
+  animateValue(500, xr, 1100)
   await sleep(2200);
   if (xl > xr && guess == "higher") {
     console.log("correct!");
     score+=1;
-    newCompare();
-  } else if (xl < xr && guess == "lower") {
+    //if (score >= 500){
+      //win();
+    //}
+  //  else{
+      newCompare();
+     // }
+    } 
+  else if (xl < xr && guess == "lower") {
     console.log("correct!"); 
     score+=1;
+    if (score >= 500){
+      win();
+    }
+    else{
     newCompare();
+    }
   } else {
     console.log("wrong");
     lose();
@@ -573,6 +586,8 @@ function newCompare() {
   while (pastranks.includes(xr)){
     xr = Math.floor(Math.random() * (500)); 
   }
+  console.log(getTitle(xr));
+
   pastranks.push(xr);
   var scoretext = document.getElementById("score");
   var hs =  document.getElementById("highscore");
@@ -588,13 +603,17 @@ function newCompare() {
   //var rightSide = document.getElementById("wrap_right");
   //var LeftPos = rightSide.offsetLeft;
   //var RightPos = LeftPos + boxElement.offsetWidth;
+  console.log("doing it");
   leftRank.innerText = xl;
   leftTitle.innerText = rightTitle.innerText;
   rightTitle.innerText = getTitle(xr);
+  console.log(getTitle(xr));
+
   leftArtist.innerText = rightArtist.innerText;
-  rightArtist.innerText = getArtist(xr);
+  rightArtist.innerText = "by " +  getArtist(xr);
   leftPic.src = rightPic.src;
   rightPic.src = getAlbum(xr);
+
   if (xl.toString().length == 1 ){
     leftRank.style.left = "22%";
     leftRank.style.top = "140px";
@@ -608,13 +627,14 @@ function newCompare() {
   else{leftRank.innerText = xl;}
 }
 function firstCompare() {
+
   score = 0;
   document.getElementById("highscore").innerText = "High Score: " + highscore;
   document.getElementById("score").innerText = "Score: " + 0;
 
   document.getElementById("game_over_container").style.display = "none";
-  xl = 500;
-  xr = 1;
+
+
   var leftTitle = document.getElementById("LTitle");
   var rightTitle = document.getElementById("RTitle");
   var leftArtist = document.getElementById("Lartist");
@@ -622,16 +642,25 @@ function firstCompare() {
   var leftRank = document.getElementById("LRank");
   var leftPic = document.getElementById("picLeft");
   var rightPic = document.getElementById("picRight"); 
+  xr = Math.floor(Math.random() * (500)); 
+  xl = Math.floor(Math.random() * (500)); 
+  pastranks.push(xr);
+  pastranks.push(xl);
+
   leftPic.src = getAlbum(xl);
   rightPic.src = getAlbum(xr); 
   
   leftRank.innerText = xl
   leftTitle.innerText = getTitle(xl);
-  leftArtist.innerText =  getArtist(xl);
+  leftArtist.innerText =  "by " + getArtist(xl);
   rightTitle.innerText = getTitle(xr);
-  rightArtist.innerText= getArtist(xr);
+  rightArtist.innerText= "by " + getArtist(xr);
 
   leftRank.innerText = xl;
+  if (xr == xl){
+    score = 500; 
+    console.log("Holy shit, thats a 1 in 250000 chance, go buy a lottery ticket");
+  }
 
 }
 function lose(){
@@ -644,4 +673,7 @@ function lose(){
   }
   highscore.innerText = highscore
   score = 0;
+}
+function win(){
+  console.log("Wow, you win");
 }

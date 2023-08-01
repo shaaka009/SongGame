@@ -76,4 +76,10 @@
   font-size: 15px;
 
 }
-
+.devs{
+  font-size: 8px;
+}
+.cons{
+  font-size: 8px;
+  left: 1%;
+}

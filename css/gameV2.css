@@ -6,6 +6,7 @@ html, body{
   margin: 0%;
   overflow: hidden;
 }
+
 .wrap{
   box-sizing: border-box;
   position: relative;
@@ -13,6 +14,8 @@ html, body{
   width: 100%;
   height: 100%;
   z-index: 4;
+  flex-direction: row;
+  display: flex;
 }
 .bg-container{
   position: absolute;
@@ -24,12 +27,12 @@ html, body{
 .coverLeft {
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
 .coverRight {
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
 .textContent-left{
   z-index: 3;
@@ -47,9 +50,7 @@ html, body{
   font-family: Helvetica;
   text-align: center;
   font-size: 2.4em;
-  text-shadow: 1px 0 white;
   letter-spacing: 2px;
-  font-weight:lighter;
 }
 .textContent-right{
   z-index: 3;
@@ -67,9 +68,7 @@ html, body{
   font-family: Helvetica;
   text-align: center;
   font-size: 2.4em;
-  text-shadow: 1px 0 white;
   letter-spacing: 2px;
-  font-weight:100;
   opacity: 90%;
   
 }
@@ -79,8 +78,14 @@ html, body{
   margin-top: 0;
 
 }
-#by{
-  font-size: 12px;
+#Rartist{
+  font-size: 18px;
+  margin-bottom: 1%;
+  margin-top: 0%;
+  font-family: Helvetica;
+}
+#Lartist{
+  font-size: 18px;
   margin-bottom: 1%;
   margin-top: 0%;
   font-family: Helvetica;
@@ -89,12 +94,8 @@ html, body{
   margin-top: 1%;
   margin-bottom: 1%;
 
-  font-size: 30px;
-  font-weight:lighter;
   font-family: Helvetica;
   font-size: 16px;
-
-
 }
 .rank {
   height: 40%;
@@ -110,8 +111,6 @@ html, body{
   font-size: 100px;
   font-family: Brush Script MT;
   color: rgb(255, 249, 137);
-
-  
 }
 #buttons{
   position: relative;
@@ -127,7 +126,6 @@ html, body{
   width: 42%;
   height: 50px;
   display: inline-block;
-  font-weight: 100;
   font-family: Helvetica;
   color:rgb(255, 249, 137);
   background-color: transparent;
@@ -177,19 +175,18 @@ html, body{
   height: 100%;
   left: 50%;
   transform: translate(-50%, 0%);
-  color: black;
+  color: transparent;
   font-family: Helvetica;
   text-align: center;
   font-size: 2.5em;
   text-shadow: 1px 0 black;
   letter-spacing: 2px;
-  font-weight:bold;
   background-color: transparent;
 }
 .vs-circle {
   position: relative;
   background: rgb(255, 255, 255);
-  color: black;
+  color: transparent;
   opacity: 100%;
   width: 80px;
   height: 80px;
@@ -207,19 +204,16 @@ html, body{
   font-size: 30px;
   width: 100%;
   height: 100%;
-  color: black;
-  font-weight: lighter;
+  color: transparent;
 }
 .spacer-2 {
   height:100%;
 }
 .in {
   font-size: 15px;
-  font-weight:lighter;
 }
 .than{ 
   font-size: 16px;
-  font-weight: lighter;
   margin-bottom: 1%;
 }
 .scores{
@@ -235,23 +229,20 @@ html, body{
   color: white;
   font-family: Helvetica;
   text-align: center;
-  font-size: 19px;
-  text-shadow: 1px 0 white;
+  font-size: 22px;
   letter-spacing: 2px;
-  font-weight:bold; 
   top: -8%; 
   left: 10%;
+  font-weight: 900;
 }
 #score{
   font-family: Helvetica;
-  font-size: 22px;
   top: 75%; 
   left: 45%;
 }
 #highscore{
   top: 75%; 
   left: -22%;
-  font-size: 22px;
 
 }
 #game_over_container{
@@ -274,7 +265,6 @@ html, body{
   font-size: 2.4em;
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
-  font-weight:bold;
   display: none;
 }
 #finalscore{
@@ -296,7 +286,6 @@ html, body{
   width: 25%;
   height: 70px;
   display: inline-block;
-  font-weight: bold;
   font-family: Helvetica;
   color:white;
   background-color: transparent;
@@ -339,7 +328,13 @@ html, body{
   color: black; 
   font-size: 20px;
 }
-
+.devs{
+  font-size: 5px
+}
+.cons{
+  font-size: 5px;
+  left: 1%;
+}
 
 iframe{
 
@@ -360,7 +355,99 @@ iframe{
   font-size: 2.4em;
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
-  font-weight:100;
   opacity: 90%;
+
+}
+@media only screen and (max-width:600px)
+{
+  html, body{
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .vs-circle {
+    position: relative;
+    background: rgb(255, 255, 255);
+    color: transparent;
+    opacity: 100%;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    text-align: center;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+  }
+  .vs {
+    font-family: Helvetica;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+  }
+  .in {
+    font-size: 7px;
+  }
+  .than{ 
+    font-size: 8px;
+    margin-bottom: 1%;
+  }
+  .ranked {
+
+    font-size: 8px;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 2%;
+    margin-top: 0;
+  }
+  
+  .button{
+    width: 22%;
+    height: 20px;
+ 
+    font-size: 8px;
+  }
+  #Rartist{
+    font-size: 9px;
+  }
+  #Lartist{
+    font-size: 9px;
+  }
+  
+  .scores{
+    font-size: 10px;
+  
+  }
+  #score{
+    top: -118%; 
+    left: 52%;
+  }
+  #highscore{
+    top: -19%; 
+    left: -28%;
+  }
+  .rank {
+    height: 40%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    font-size: 60px;
+    font-family: Brush Script MT;
+    color: rgb(255, 249, 137);
+  }
+  #scroll{
+    font-size: 60px;
+
+  }
+  .button1{  
+    font-size: 15px;
+  }
 
 }
