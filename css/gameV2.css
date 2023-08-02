@@ -253,12 +253,12 @@ html, body{
 }
 #score{
   font-family: Helvetica;
-  top: 75%; 
-  left: 45%;
+  top: -20%; 
+  left: 51%;
 }
 #highscore{
-  top: 75%; 
-  left: -22%;
+  top: -20%; 
+  left: -21%;
 
 }
 #game_over_container{
@@ -418,7 +418,6 @@ iframe.slide {
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
   }
@@ -437,7 +436,6 @@ iframe.slide {
     margin-bottom: 1%;
   }
   .ranked {
-
     font-size: 8px;
   }
   .title {
@@ -445,7 +443,6 @@ iframe.slide {
     margin-bottom: 2%;
     margin-top: 0;
   }
-  
   .button{
     width: 22%;
     height: 20px;
@@ -453,22 +450,20 @@ iframe.slide {
     font-size: 8px;
   }
   #Rartist{
-    font-size: 9px;
+    font-size: 12px;
   }
   #Lartist{
-    font-size: 9px;
+    font-size: 12px;
   }
-  
   .scores{
     font-size: 10px;
-  
   }
   #score{
-    top: -118%; 
-    left: 52%;
+    top: -20%; 
+    left: 51%;
   }
   #highscore{
-    top: -19%; 
+    top: -18%; 
     left: -28%;
   }
   .rank {
@@ -481,10 +476,10 @@ iframe.slide {
   }
   #scroll{
     font-size: 60px;
-
   }
   .button1{  
     font-size: 15px;
   }
+  
 
 }
