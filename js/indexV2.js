@@ -6,6 +6,7 @@ var pastranks = [1, 500];
 var score = 0;
 var highscore = 0;
 var scrolling = false;
+var slideCount = 0;
 var allsongs = [
   "500", "Stronger", "Kanye West", "2007", "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a"
   , "499", "Baby Love", "The Supremes", "1964", "https://m.media-amazon.com/images/I/614-RdaM4YL._UF1000,1000_QL80_.jpg"
@@ -615,16 +616,16 @@ function newCompareV2() {
   hs.innerText = "High Score: " + highscore;
 
   leftTitle.innerText = getTitle(xl);
-  leftArtist.innerText = getArtist(xl);
+  leftArtist.innerText = "by " + getArtist(xl);
   leftRank.innerText = xl;
   leftPic.src = getAlbum(xl);
 
   rightTitle.innerText = getTitle(xr);
-  rightArtist.innerText = getArtist(xr);
+  rightArtist.innerText = "by " + getArtist(xr);
   rightPic.src = getAlbum(xr);
 
   exTitle.innerText = getTitle(xrr);
-  exArtist.innerText = getArtist(xrr);
+  exArtist.innerText = "by " + getArtist(xrr);
   exPic.src = getAlbum(xrr);
 
 
@@ -762,6 +763,21 @@ function slide() {
 
   //console.log("start of slide");
 
+  slideCount++;
+
+  if (slideCount % 2 == 1) {
+
+    fadeOut(document.getElementById("Rsnippet"), 300);
+    fadeOut(document.getElementById("Lsnippet"), 300);
+    fadeOut(document.getElementById("Exsnippet"), 1);
+
+  } else {
+
+    fadeIn(document.getElementById("Rsnippet"), 300);
+    fadeIn(document.getElementById("Lsnippet"), 300);
+
+  }
+
   document.getElementById("wrap_right").classList.toggle('slide');
   document.getElementById("wrap_left").classList.toggle('slide');
   document.getElementById("extend").classList.toggle('slide');
@@ -769,3 +785,38 @@ function slide() {
   //console.log("end of slide");
 
 }
+
+function fadeOut(el, duration) {
+
+  /*
+   * @param el - The element to be faded out.
+   * @param duration - Animation duration in milliseconds.
+   */
+
+  var step = 10 / duration,
+    opacity = 1;
+  function next() {
+    if (opacity <= 0) { return; }
+    el.style.opacity = (opacity -= step);
+    setTimeout(next, 10);
+  }
+  next();
+}
+
+function fadeIn(el, duration) {
+
+  /*
+   * @param el - The element to be faded out.
+   * @param duration - Animation duration in milliseconds.
+   */
+
+  var step = 10 / duration,
+    opacity = 0;
+  function next() {
+    if (opacity >= 1) { return; }
+    el.style.opacity = (opacity += step);
+    setTimeout(next, 10);
+  }
+  next();
+}
+
