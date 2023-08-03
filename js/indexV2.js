@@ -999,7 +999,7 @@ var allsongs = [
   , "14", "Waterloo Sunset", "The Kinks", "1967", "https://i.scdn.co/image/ab67616d00001e022302feb7da6b546f7ed197ec"
   , "13", "Gimme Shelter", "Stones", "1969", "https://i.scdn.co/image/ab67616d0000b2732af30c881bb23cfb82a8cf99"
   , "12", "Superstition", "Stevie Wonder", "1972", "https://i.scdn.co/image/ab67616d0000b273a14b08b9a6616e121df5e8b0"
-  , "11", "God Only Knows", "Beach Boys", "1966", "https://m.media-amazon.com/images/MV5BNzhhNWJiOWYtNTA3ZC00MzdhLThmZDYtYjkzZmVhZjYyYzVlXkEyXkFqcGdeQXVyNTMyODM3MTg@._V1_FMjpg_UX1000_.jpg"
+  , "11", "God Only Knows", "Beach Boys", "1966", "https://i.scdn.co/image/ab67616d0000b273bde8dfd1922129f3d9e3732f"
   , "10", "‘Hey Ya!", "Outkast", "2003", "https://i.scdn.co/image/ab67616d0000b2736a6387ab37f64034cdc7b367"
   , "9", "Dreams", "Fleetwood Mac", "1977", "https://upload.wikimedia.org/wikipedia/en/b/b9/Fleetwood_Mac_-_Dreams.png"
   , "8", "Get Ur Freak On", "Missy Elliott", "2001", "https://i.scdn.co/image/ab67616d0000b2732e3969990abe1229c0879a7b"
