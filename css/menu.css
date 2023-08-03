@@ -15,6 +15,21 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+body, html{
+
+  height: 100%;
+
+}
+
+.wrapping{
+
+  height: 100%;
+  display: flex;
+
+
+}
+
 .songEdition{
   position: absolute;
   left:35%;
