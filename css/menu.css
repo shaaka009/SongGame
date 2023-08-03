@@ -64,37 +64,32 @@ body, html{
   left: 40%;
   cursor: pointer;
 }
-.devs{
+.devs, .cons, .net, .email{
   color: white;
   position: absolute;
-  left: 1%;
-  top: 102%;
   font-family: "Dosis",sans-serif;
-  font-size: 12px;
+  font-size: 8px;
 }
+.devs{
+  left: 1%;
 
+  top: 102%;
+}
 .cons{
-  color: white;
-  position: absolute;
-  left: 5%;
-  top: 105%;
-  font-family: "Dosis",sans-serif;
-  font-size: 12px;
+  left: 1%;
 
+  top: 105%;
 }
 .net{
   color: white;
   position: absolute;
   left: 46%;
   top: 90%;
-  font-family: "Dosis",sans-serif;
   font-size: 15px;
+}
+.email{
+ top: 105%;
+ right: 1%;
+}
 
-}
-.devs{
-  font-size: 8px;
-}
-.cons{
-  font-size: 8px;
-  left: 1%;
-}
+
