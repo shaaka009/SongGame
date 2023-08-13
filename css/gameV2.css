@@ -351,16 +351,19 @@ html, body{
   font-size: 5px;
   left: 1%;
 }
+.email{
+  font-size: 5px;
+  left: 1%;
+}
 
 iframe{
-
   z-index: 3;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  height: 15%;
+  height: 20%;
   margin: auto; 
   bottom: 5%; 
   left: 10%;
@@ -372,17 +375,15 @@ iframe{
   text-shadow: 1px 0 white;
   letter-spacing: 2px;
   opacity: 90%;
-
+  overflow: hidden;
 }
 
 iframe.slide {
-
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 2s, opacity 2s linear;
-  
+    overflow: hidden; 
 }
-
 .slide{
 
   -webkit-transition: 1s ease-in-out;
@@ -480,6 +481,6 @@ iframe.slide {
   .button1{  
     font-size: 15px;
   }
-  
+
 
 }
