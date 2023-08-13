@@ -1151,55 +1151,9 @@ function newCompareV2() {
 
 }
 
-/*function newCompare() {
-  xl = xr;
-  slide();
-  xr = xrr;
-  while (pastranks.includes(xr)) {
-    xrr = Math.floor(Math.random() * (500));
-  }
-  pastranks.push(xr);
-  var scoretext = document.getElementById("score");
-  var hs = document.getElementById("highscore");
-  var leftTitle = document.getElementById("LTitle");
-  var rightTitle = document.getElementById("RTitle");
-  var leftArtist = document.getElementById("Lartist");
-  var rightArtist = document.getElementById("Rartist");
-  var leftRank = document.getElementById("LRank");
-  var leftPic = document.getElementById("picLeft");
-  var rightPic = document.getElementById("picRight");
-  scoretext.innerText = "Score: " + score;
-  hs.innerText = "High Score: " + highscore;
-  //var rightSide = document.getElementById("wrap_right");
-  //var LeftPos = rightSide.offsetLeft;
-  //var RightPos = LeftPos + boxElement.offsetWidth;
-  //console.log("doing it");
-  leftRank.innerText = xl;
-  leftTitle.innerText = rightTitle.innerText;
-  rightTitle.innerText = getTitle(xr);
-  //console.log(getTitle(xr));
 
-  leftArtist.innerText = rightArtist.innerText;
-  rightArtist.innerText = "by " + getArtist(xr);
-  leftPic.src = rightPic.src;
-  rightPic.src = getAlbum(xr);
-
-  if (xl.toString().length == 1) {
-    leftRank.style.left = "22%";
-    leftRank.style.top = "140px";
-    leftRank.style.fontSize = "90px";
-    leftRank.innerText = xl;
-  } else if (xl.toString().length == 2) {
-    leftRank.style.left = "20%";
-    leftRank.style.top = "170px";
-    leftRank.style.fontSize = "75px";
-    leftRank.innerText = xl;
-  }
-  else { leftRank.innerText = xl; }
-}*/
 function firstCompare() {
 
-  //console.log("start of first Compare");
 
   score = 0;
   document.getElementById("highscore").innerText = "High Score: " + highscore;
